@@ -24,7 +24,7 @@ public class Model {
 		}else{
 			for(int pos=0; pos<rimanenti.length();pos++) {
 				String nuova_parziale= parziale + rimanenti.charAt(pos);
-				String nuova_rimanenti= rimanenti.substring(0,pos)+ rimanenti.substring(pos+1);
+				String nuova_rimanenti= rimanenti.substring(0,pos)+ rimanenti.substring(pos+1); //tengo tutti tranne quello in posizione ps
 				anagramma_ricorsiva(nuova_parziale, L+1, nuova_rimanenti);
 			}
 		}
